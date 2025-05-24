@@ -1,0 +1,46 @@
+/* Loading component styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.spinner {
+  border: 2px solid var(--border-light);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+.spinner-small {
+  width: 16px;
+  height: 16px;
+  border-width: 1px;
+}
+
+.spinner-medium {
+  width: 24px;
+  height: 24px;
+  border-width: 2px;
+}
+
+.spinner-large {
+  width: 32px;
+  height: 32px;
+  border-width: 3px;
+}
+
+.loading-message {
+  margin-top: var(--spacing-md);
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+}
+
+@keyframes spin {
+  to { 
+    transform: rotate(360deg); 
+  }
+}
