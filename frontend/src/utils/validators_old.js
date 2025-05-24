@@ -130,3 +130,25 @@ export const validateRegisterForm = (formData) => {
     errors,
   };
 };
+
+export const validateEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return 'Please enter a valid email address';
+  }
+  return null;
+};
+
+export const validateMinLength = (value, minLength, fieldName) => {
+  if (value && value.length < minLength) {
+    return `${fieldName} must be at least ${minLength} characters`;
+  }
+  return null;
+};
+
+export const validateMaxLength = (value, maxLength, fieldName) => {
+  if (value && value.length > maxLength) {
+    return `${fieldName} must be less than ${maxLength} characters`;
+  }
+  return null;
+};

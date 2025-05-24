@@ -8,6 +8,9 @@ export const ROUTES = {
   HOME: '/',
   ITEMS: '/items',
   ITEM_DETAIL: '/items/:id',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  PROFILE: '/profile',
   ABOUT: '/about',
   CONTACT: '/contact',
 };
@@ -37,6 +40,14 @@ export const MESSAGES = {
   SUCCESS_DELETE: 'Item deleted successfully',
   NO_ITEMS: 'No items found',
   CONFIRM_DELETE: 'Are you sure you want to delete this item?',
+  // Authentication messages
+  AUTH_LOGIN_SUCCESS: 'Login successful',
+  AUTH_REGISTER_SUCCESS: 'Registration successful',
+  AUTH_LOGOUT_SUCCESS: 'Logout successful',
+  AUTH_ERROR: 'Authentication error',
+  AUTH_INVALID_CREDENTIALS: 'Invalid credentials',
+  AUTH_USER_EXISTS: 'User already exists',
+  AUTH_REQUIRED: 'Please log in to continue',
 };
 
 export const VALIDATION = {
