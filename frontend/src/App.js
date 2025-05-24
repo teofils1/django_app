@@ -178,19 +178,6 @@ function App() {
       </header>
     </div>
   );
-                      className="delete-btn"
-                    >
-                      Delete
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
-    </div>
-  );
 }
 
 export default App;
